@@ -1,3 +1,5 @@
+This is cloned from the original location that application was created, which is set to private.
+
 # **Online Poker**
 I will create a server-based Poker website using HTML/CSS and JavaScript with a Node/Express server. This will allow the player to use chips that are given upon access to the website and bet within the game. The user will access said website and be given a certain number of chips that they can use to gamble in a game of Poker.
 
