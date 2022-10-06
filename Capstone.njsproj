@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>Capstone</Name>
+    <RootNamespace>Capstone</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>d02a9531-d732-4110-9879-26ec5dc7d922</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>app.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="app.js" />
+    <Content Include="jest\Card.test.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="jest\Deck.test.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="jest\DB.test.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="jest\Player.test.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="jest\PokerPresenter.test.js" />
+    <Content Include="jest\User.test.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="model\Card.js" />
+    <Content Include="model\DBModel.js" />
+    <Content Include="model\Deck.js" />
+    <Content Include="model\Player.js" />
+    <Content Include="package.json" />
+    <Content Include="presenter\PokerPresenter.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="presenter\User.js" />
+    <Content Include="public\images\cards\10c.png" />
+    <Content Include="public\images\cards\10d.png" />
+    <Content Include="public\images\cards\10h.png" />
+    <Content Include="public\images\cards\10s.png" />
+    <Content Include="public\images\cards\2c.png" />
+    <Content Include="public\images\cards\2d.png" />
+    <Content Include="public\images\cards\2h.png" />
+    <Content Include="public\images\cards\2s.png" />
+    <Content Include="public\images\cards\3c.png" />
+    <Content Include="public\images\cards\3d.png" />
+    <Content Include="public\images\cards\3h.png" />
+    <Content Include="public\images\cards\3s.png" />
+    <Content Include="public\images\cards\4c.png" />
+    <Content Include="public\images\cards\4d.png" />
+    <Content Include="public\images\cards\4h.png" />
+    <Content Include="public\images\cards\4s.png" />
+    <Content Include="public\images\cards\5c.png" />
+    <Content Include="public\images\cards\5d.png" />
+    <Content Include="public\images\cards\5h.png" />
+    <Content Include="public\images\cards\5s.png" />
+    <Content Include="public\images\cards\6c.png" />
+    <Content Include="public\images\cards\6d.png" />
+    <Content Include="public\images\cards\6h.png" />
+    <Content Include="public\images\cards\6s.png" />
+    <Content Include="public\images\cards\7c.png" />
+    <Content Include="public\images\cards\7d.png" />
+    <Content Include="public\images\cards\7h.png" />
+    <Content Include="public\images\cards\7s.png" />
+    <Content Include="public\images\cards\8c.png" />
+    <Content Include="public\images\cards\8d.png" />
+    <Content Include="public\images\cards\8h.png" />
+    <Content Include="public\images\cards\8s.png" />
+    <Content Include="public\images\cards\9c.png" />
+    <Content Include="public\images\cards\9d.png" />
+    <Content Include="public\images\cards\9h.png" />
+    <Content Include="public\images\cards\9s.png" />
+    <Content Include="public\images\cards\Ac.png" />
+    <Content Include="public\images\cards\Ad.png" />
+    <Content Include="public\images\cards\Ah.png" />
+    <Content Include="public\images\cards\As.png" />
+    <Content Include="public\images\design\border.png" />
+    <Content Include="public\images\design\emptyFrame.png" />
+    <Content Include="public\images\cards\Jc.png" />
+    <Content Include="public\images\cards\Jd.png" />
+    <Content Include="public\images\cards\Jh.png" />
+    <Content Include="public\images\cards\Js.png" />
+    <Content Include="public\images\cards\Kc.png" />
+    <Content Include="public\images\cards\Kd.png" />
+    <Content Include="public\images\cards\Kh.png" />
+    <Content Include="public\images\cards\Ks.png" />
+    <Content Include="public\images\cards\Qc.png" />
+    <Content Include="public\images\cards\Qd.png" />
+    <Content Include="public\images\cards\Qh.png" />
+    <Content Include="public\images\cards\Qs.png" />
+    <Content Include="test\wdio\playerSeesCards.js" />
+    <Content Include="test\wdio\userConnection.js" />
+    <Content Include="views\home.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="public\css\main.css" />
+    <Content Include="README.md" />
+    <Content Include="views\home.html">
+      <SubType>Code</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="model\" />
+    <Folder Include="presenter\" />
+    <Folder Include="public\" />
+    <Folder Include="public\images\" />
+    <Folder Include="public\images\cards\" />
+    <Folder Include="public\images\design\" />
+    <Folder Include="public\javascripts\" />
+    <Folder Include="public\css\" />
+    <Folder Include="routes\" />
+    <Folder Include="test\" />
+    <Folder Include="jest\" />
+    <Folder Include="test\wdio\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

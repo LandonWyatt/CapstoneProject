@@ -1,0 +1,3 @@
+C:\Users\wyattl\Documents\GitHub\LandonWyatt\obj\Debug\Capstone.njsprojAssemblyReference.cache
+C:\Users\wyattl\Documents\GitHub\LandonWyatt\obj\Debug\Capstone.njsproj.CoreCompileInputs.cache
+C:\Users\wyattl\Documents\GitHub\LandonWyatt\bin\Microsoft.NodejsTools.WebRole.dll

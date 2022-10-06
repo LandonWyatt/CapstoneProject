@@ -1,0 +1,133 @@
+body {
+    padding: 10px;
+    /*font: 14px Arial, sans-serif;*/
+    font: 14px Monaco, monospace;
+    /*background-color: #2a513e;*/
+    background: url("/images/design/mainBackground.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+}
+
+a {
+    color: #00B7FF;
+}
+
+#nameIn {
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#nameInSubmit {
+    background-color: red;
+    border: none;
+    outline: none;
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px 5px 5px 5px;
+}
+#formName button:disabled {
+    background-color: rgb(255 0 0 / 0.50);
+    color: rgb(0 0 0 / 0.50);
+}
+
+#usersWaiting {
+    /*background-color: #671e0c;*/
+    background-image: url("/images/design/listBackground.jpg");
+    background-size: cover;
+    color: white;
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+    border-color: black;
+    resize: none;
+    outline: none;
+    cursor: default;
+}
+
+.usersInGame {
+    float: left;
+}
+#usersInGame {
+    /*background-color: #671e0c;*/
+    background-image: url("/images/design/listBackground.jpg");
+    background-size: cover;
+    color: white;
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+    border-color: black;
+    resize: none;
+    outline: none;
+    cursor: default;
+}
+
+.chipCountClass p {
+    margin: 5px 0px 5px 0px;
+}
+
+.commCards {
+    margin: auto;
+    width: 375px;
+}
+#commCards {
+    height: 99px;
+    width: 100%;
+    margin: 2px 0px 0px 0px;
+}
+#commCards img {
+    width: 71px;
+    margin: 0px 2px 0px 2px;
+}
+
+.pot p {
+    margin: 5px 0px 5px 0px;
+}
+
+.currBet p {
+    margin: 5px 0px 5px 0px;
+}
+
+.cards {
+    margin: auto;
+    width: 150px;
+}
+#cards {
+    margin: 2px 0px 0px 0px;
+}
+#cards img {
+    width: 71px;
+    margin: 0px 2px 0px 2px;
+}
+
+#highestHandP {
+    margin: 5px 0px 5px 0px;
+}
+
+#betRaiseIn {
+    resize: none;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.choiceButtons button {
+    background-color: red;
+    border: none;
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px 5px 5px 5px;
+}
+.choiceButtons button:disabled {
+    background-color: rgb(255 0 0 / 0.50);
+    color: rgb(0 0 0 / 0.50);
+}
+
+#highestHand {
+    font-size: 15px;
+    color: white;
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+}

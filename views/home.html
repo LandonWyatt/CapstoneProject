@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    <title>Poker</title>
+</head>
+<body>
+    <!--Temporary form that will allow user to connect via name-->
+    <form id="formName" action="">
+        <label for="name">Enter Name:</label>
+        <input type="text" id="nameIn" name="name" />
+        <button id="nameInSubmit" disabled>Submit</button>
+    </form>
+
+    <!--List of Users currently Connected-->
+    <div class="usersInGame" style="visibility: collapse;">
+        <label for="usersInGame"><b>In-Game:</b><br /></label>
+        <textarea id="usersInGame" rows="4" cols="10" readonly></textarea>
+    </div>
+    <div class="usersWaiting" style="visibility: collapse;">
+        <label for="usersWaiting"><b>Waiting:</b><br /></label>
+        <textarea id="usersWaiting" rows="4" cols="10" readonly></textarea>
+    </div>
+
+    <!--Show Users their chip count-->
+    <div class="chipCountClass" style="visibility: collapse;">
+        <p>Chips: <span id="chipCount"></span></p>
+    </div>
+
+    <!-- Show countdown timer for game start -->
+    <div class="gameStart" style="display: none;">
+        <p id="countdownTimer"></p>
+    </div>
+
+    <!-- Show player count -->
+    <div class="playerCount" style="display: none;">
+        <p id="playerCount"></p>
+    </div>
+
+    <!--Information for the Game: Player's Cards, Community Cards, etc.-->
+    <div class="gameInfo" style="visibility: collapse;">
+        <div class="commCards">
+            <label id="commCardsLabel" for="commCards">Community Cards:<br /></label>
+            <div id="commCards"></div>
+        </div>
+        <div class="pot">
+            <p>Pot: <span id="pot">0</span></p>
+        </div>
+        <div class="currBet">
+            <p>Current Bet: <span id="currBet">0</span></p>
+        </div>
+        <div class="cards">
+            <label id="cardsLabel" for="cards">Your Hand:<br /></label>
+            <div id="cards"></div>
+        </div>
+        <div class="highestHand">
+            <p id="highestHandP">Highest Hand: <span id="highestHand"></span></p>
+        </div>
+    </div>
+
+    <div class="betRaise" style="visibility: collapse;">
+        <label id="betRaise" for="betRaise">Bet/Raise:<br /></label>
+        <textarea id="betRaiseIn" rows="1" cols="8"></textarea>
+    </div>
+
+    <!--Choice Buttons for User-->
+    <form class="choiceButtons" style="visibility: collapse;">
+        <!--First Choice Button: Check or Call-->
+        <button id="firstChoice" type="button" name="button" onclick="saveChoice(this.id)" style="visibility: collapse;"></button>
+        <!--Second Choice Button: Bet or Raise-->
+        <button id="secondChoice" type="button" name="button" onclick="saveChoice(this.id)" style="visibility: collapse;" disabled></button>
+        <!--Fold Choice-->
+        <button id="foldChoice" type="button" name="button" onclick="saveChoice(this.id)" style="visibility: collapse;">Fold</button>
+    </form>
+
+    <div class="endgameInfo" style="visibility: collapse;">
+        <p id="winner"></p>
+        <p id="countdown"></p>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="home.js"></script>
+</body>
+</html>
